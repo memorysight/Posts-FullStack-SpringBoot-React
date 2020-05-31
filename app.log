@@ -1,0 +1,81 @@
+2020-05-30 19:42:00.614  INFO 48866 --- [restartedMain] com.smith.post.PostApplication           : Starting PostApplication on Daniels-MacBook-Pro-2.local with PID 48866 (/Users/danielsmith/eclipse-workspace/Post/target/classes started by danielsmith in /Users/danielsmith/eclipse-workspace/Post)
+2020-05-30 19:42:00.614 DEBUG 48866 --- [restartedMain] com.smith.post.PostApplication           : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-30 19:42:00.614  INFO 48866 --- [restartedMain] com.smith.post.PostApplication           : The following profiles are active: prodAOPLog
+2020-05-30 19:42:00.813  INFO 48866 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-30 19:42:00.825  INFO 48866 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 2 JPA repository interfaces.
+2020-05-30 19:42:01.005  INFO 48866 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-30 19:42:01.013  INFO 48866 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 395 ms
+2020-05-30 19:42:01.060  INFO 48866 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/posts?serverTimezone=UTC&useLegacyDatetimeCode=false'
+2020-05-30 19:42:01.268  INFO 48866 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 19:42:01.273  INFO 48866 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-30 19:42:01.382  WARN 48866 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-30 19:42:01.482  INFO 48866 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64eecc74, org.springframework.security.web.context.SecurityContextPersistenceFilter@65f65370, org.springframework.security.web.header.HeaderWriterFilter@2eb0c817, org.springframework.web.filter.CorsFilter@20aac99f, org.springframework.security.web.authentication.logout.LogoutFilter@571d5e72, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d381955, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@47a2a1b8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@39e7e85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@364e2187, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e96a729, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10fd4009, org.springframework.security.web.session.SessionManagementFilter@1c68b0ab, org.springframework.security.web.access.ExceptionTranslationFilter@784575dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f0b57f5]
+2020-05-30 19:42:01.510  INFO 48866 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-30 19:42:01.579  INFO 48866 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-30 19:42:01.580  INFO 48866 --- [restartedMain] com.smith.post.PostApplication           : Started PostApplication in 1.02 seconds (JVM running for 628.761)
+2020-05-30 19:42:01.584  INFO 48866 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-05-30 19:42:07.002  INFO 48866 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-30 19:42:07.007  INFO 48866 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-05-30 19:42:07.011 DEBUG 48866 --- [http-nio-8080-exec-1] c.s.p.logging.ApplicationLoggerAspect    :  
+ 
+ 
+
+2020-05-30 19:42:07.012 DEBUG 48866 --- [http-nio-8080-exec-1] c.s.p.logging.ApplicationLoggerAspect    : **********Before Method Execution *********** 
+ com.smith.post.controllers.UserController.displayUsers () with arguments[s] = [{}]
+2020-05-30 19:42:07.013 DEBUG 48866 --- [http-nio-8080-exec-1] c.s.p.logging.ApplicationLoggerAspect    : ____________________ 
+ 
+ 
+ 
+2020-05-30 19:42:07.038 DEBUG 48866 --- [http-nio-8080-exec-1] c.s.p.logging.ApplicationLoggerAspect    :  
+ 
+ 
+
+2020-05-30 19:42:07.039 DEBUG 48866 --- [http-nio-8080-exec-1] c.s.p.logging.ApplicationLoggerAspect    : **********After Method Execution *********** 
+ com.smith.post.controllers.UserController.displayUsers () with arguments[s] = [{users=[com.smith.post.entities.User@52c1d67d, com.smith.post.entities.User@cfdd761, com.smith.post.entities.User@4fe32511, com.smith.post.entities.User@6d7ecdc0, com.smith.post.entities.User@31509c2c, com.smith.post.entities.User@53f413b8, com.smith.post.entities.User@5e97f7a, com.smith.post.entities.User@1ee2b2ca, com.smith.post.entities.User@2b66ecc6, com.smith.post.entities.User@58fc43c1, com.smith.post.entities.User@1620f50b, com.smith.post.entities.User@1ddf71e7, com.smith.post.entities.User@143ae46, com.smith.post.entities.User@3b1b17e4, com.smith.post.entities.User@4cb439cf, com.smith.post.entities.User@50199f81, com.smith.post.entities.User@335e1651, com.smith.post.entities.User@84e8626, com.smith.post.entities.User@65d9aca1, com.smith.post.entities.User@7920d20c, com.smith.post.entities.User@3a0fafe7, com.smith.post.entities.User@468c7136, com.smith.post.entities.User@6e9861e2, com.smith.post.entities.User@11577e8f, com.smith.post.entities.User@56e08bd5, com.smith.post.entities.User@73c045fe, com.smith.post.entities.User@5e7aad15, com.smith.post.entities.User@74f30353, com.smith.post.entities.User@261f903b, com.smith.post.entities.User@5781ceb3, com.smith.post.entities.User@5c18d353, com.smith.post.entities.User@301dba18, com.smith.post.entities.User@6a596a68, com.smith.post.entities.User@33f4d5c6, com.smith.post.entities.User@296c0aa0, com.smith.post.entities.User@747ca8ef, com.smith.post.entities.User@55578622, com.smith.post.entities.User@401833ab, com.smith.post.entities.User@9e80802, com.smith.post.entities.User@1842f200, com.smith.post.entities.User@71cd01bc]}]
+2020-05-30 19:42:07.039 DEBUG 48866 --- [http-nio-8080-exec-1] c.s.p.logging.ApplicationLoggerAspect    : ____________________ 
+ 
+ 
+ 
+2020-05-30 19:42:27.027 DEBUG 48866 --- [http-nio-8080-exec-4] c.s.p.logging.ApplicationLoggerAspect    :  
+ 
+ 
+
+2020-05-30 19:42:27.028 DEBUG 48866 --- [http-nio-8080-exec-4] c.s.p.logging.ApplicationLoggerAspect    : **********Before Method Execution *********** 
+ com.smith.post.controllers.PostController.displayPosts () with arguments[s] = [{}]
+2020-05-30 19:42:27.028 DEBUG 48866 --- [http-nio-8080-exec-4] c.s.p.logging.ApplicationLoggerAspect    : ____________________ 
+ 
+ 
+ 
+2020-05-30 19:42:27.045 DEBUG 48866 --- [http-nio-8080-exec-4] c.s.p.logging.ApplicationLoggerAspect    :  
+ 
+ 
+
+2020-05-30 19:42:27.046 DEBUG 48866 --- [http-nio-8080-exec-4] c.s.p.logging.ApplicationLoggerAspect    : **********After Method Execution *********** 
+ com.smith.post.controllers.PostController.displayPosts () with arguments[s] = [{posts=[com.smith.post.entities.Post@32956948, com.smith.post.entities.Post@6044de6, com.smith.post.entities.Post@6373369b, com.smith.post.entities.Post@2009f05e, com.smith.post.entities.Post@394f123e, com.smith.post.entities.Post@1d00038c, com.smith.post.entities.Post@673d2959, com.smith.post.entities.Post@859bee0, com.smith.post.entities.Post@49c68337, com.smith.post.entities.Post@54c7f5e0, com.smith.post.entities.Post@5abe69c0, com.smith.post.entities.Post@1fd572c9, com.smith.post.entities.Post@6277853f, com.smith.post.entities.Post@9740464, com.smith.post.entities.Post@145af115]}]
+2020-05-30 19:42:27.046 DEBUG 48866 --- [http-nio-8080-exec-4] c.s.p.logging.ApplicationLoggerAspect    : ____________________ 
+ 
+ 
+ 
+2020-05-30 19:42:42.728 DEBUG 48866 --- [http-nio-8080-exec-7] c.s.p.logging.ApplicationLoggerAspect    :  
+ 
+ 
+
+2020-05-30 19:42:42.729 DEBUG 48866 --- [http-nio-8080-exec-7] c.s.p.logging.ApplicationLoggerAspect    : **********Before Method Execution *********** 
+ com.smith.post.controllers.UserController.displayUsers () with arguments[s] = [{}]
+2020-05-30 19:42:42.729 DEBUG 48866 --- [http-nio-8080-exec-7] c.s.p.logging.ApplicationLoggerAspect    : ____________________ 
+ 
+ 
+ 
+2020-05-30 19:42:42.733 DEBUG 48866 --- [http-nio-8080-exec-7] c.s.p.logging.ApplicationLoggerAspect    :  
+ 
+ 
+
+2020-05-30 19:42:42.733 DEBUG 48866 --- [http-nio-8080-exec-7] c.s.p.logging.ApplicationLoggerAspect    : **********After Method Execution *********** 
+ com.smith.post.controllers.UserController.displayUsers () with arguments[s] = [{users=[com.smith.post.entities.User@4764eaf6, com.smith.post.entities.User@3ffffedb, com.smith.post.entities.User@76e92e61, com.smith.post.entities.User@479864e6, com.smith.post.entities.User@274b15b9, com.smith.post.entities.User@67823ead, com.smith.post.entities.User@58279e1a, com.smith.post.entities.User@5c9c6eac, com.smith.post.entities.User@23054e5b, com.smith.post.entities.User@55847bc0, com.smith.post.entities.User@31b7e824, com.smith.post.entities.User@e6119b0, com.smith.post.entities.User@79fe9b1, com.smith.post.entities.User@71b3c8f9, com.smith.post.entities.User@7f4bf823, com.smith.post.entities.User@7961c2e3, com.smith.post.entities.User@14b6e1f, com.smith.post.entities.User@6e509acf, com.smith.post.entities.User@4efaedc6, com.smith.post.entities.User@397b5820, com.smith.post.entities.User@631af286, com.smith.post.entities.User@9f69ac8, com.smith.post.entities.User@107bd2ed, com.smith.post.entities.User@7322329a, com.smith.post.entities.User@471860ba, com.smith.post.entities.User@7a85924b, com.smith.post.entities.User@34a7db4c, com.smith.post.entities.User@56f389a0, com.smith.post.entities.User@526a3e74, com.smith.post.entities.User@4abe9b8, com.smith.post.entities.User@edc3fda, com.smith.post.entities.User@44281928, com.smith.post.entities.User@47b20647, com.smith.post.entities.User@1c8fd120, com.smith.post.entities.User@73c21f84, com.smith.post.entities.User@77a7a98d, com.smith.post.entities.User@20700900, com.smith.post.entities.User@4214caff, com.smith.post.entities.User@2149d306, com.smith.post.entities.User@6b68ed63, com.smith.post.entities.User@4b70d107]}]
+2020-05-30 19:42:42.733 DEBUG 48866 --- [http-nio-8080-exec-7] c.s.p.logging.ApplicationLoggerAspect    : ____________________ 
+ 
+ 
+ 
+2020-05-30 19:51:15.769  WARN 48866 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7m14s582ms).
+2020-05-30 20:14:45.856  WARN 48866 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=20m30s63ms).
+2020-05-30 20:35:44.613  WARN 48866 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=20m28s740ms).
