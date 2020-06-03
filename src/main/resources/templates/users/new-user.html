@@ -77,7 +77,7 @@ select {
 
 			<h3>Email</h3>
 			<input type="text" placeholder="Email" th:field="${user.email}">
-
+			
 
 
 			<h4>Affiliation to User</h4>
@@ -98,9 +98,11 @@ select {
 				th:field="${user.userId}"> --> 
 			<!-- IMPORTANT AREA WHERE THE TYPE OF EVENT IS POPULATED -->
 	
-			<!-- 	*{events} is actually ${customer.events} -->
+			<!-- 	*{events} is actually ${customer.events} 
 			
-				
+			-->
+			
+				<input type="hidden" th:field="${user.userId}" >
 				
 				<h5>(Re)Assign your posts (Choose all that apply)</h3>
 			<select th:field = "*{posts}" multiple = "multiple">
@@ -108,6 +110,7 @@ select {
 						th:value = "${post.postId}"
 						th:text = "${post.title}">
 			</select>
+			
 
 				<!-- End of the first customer screen where they select the Event Type which 
 				will become populated after Admin creates in in the Event Creation Page -->
